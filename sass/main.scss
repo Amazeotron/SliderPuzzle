@@ -1,0 +1,102 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+#controls {
+  margin: 0;
+  padding: 10px 0;
+  text-align: left;
+}
+
+#wrap {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+#gameboard {
+  position: relative;
+}
+
+.square {
+  position: absolute;
+  -webkit-box-shadow: inset 0px 0px 1px 1px #000000;
+}
+
+.animatedSlow {
+  -webkit-transition: all 300ms ease-in-out;
+}
+
+.animatedFast {
+  -webkit-transition: all 100ms ease-in-out;
+}
+
+.button {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 7px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfd255), color-stop(50%,#8eb92a), color-stop(51%,#72aa00), color-stop(100%,#9ecb2d));
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+
+  &:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfd255), color-stop(30%,#8eb92a), color-stop(60%,#72aa00), color-stop(100%,#9ecb2d));
+  }
+}
+
+.play-button {
+  display: none;
+}
+
+.loading {
+  background: url(../img/ajax-loader.gif) top left no-repeat;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.game-container {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 1;
+  -webkit-transition: all 500ms ease-out;
+
+  .game-container__inner {
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9);
+    width: 560px;
+    padding: 20px;
+    background: white;
+    margin: 150px auto;
+    padding: 10px;
+    overflow: auto;
+  }
+  
+  .title {
+    font-size: 32px;
+  }
+
+  .details {
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+
+

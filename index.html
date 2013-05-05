@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slider Puzzle</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  
+</head>
+<body>
+  
+  <div id="js-game-container" class="game-container">
+    <div class="game-container__inner">
+    <h1 id="js-title" class="title">Slider Puzzle</h1>
+    <p id="js-details" class="details">Click or drag the squares to move them to the empty spot. Squares may only slide to an empty spot that is to the left,
+      top, right
+      or bottom
+      of itself.</p>
+    <a href="#" id="easy-button" class="button play-button">PLAY</a>
+    <div class="loading"></div>
+    </div>
+  </div>
+  <div id="wrap">
+    <div id="controls">
+      <a href="#" id="solve-button" class="button">SOLVE</a>
+    </div>
+    <div id="gameboard"></div>
+  </div>
+  
+  <script type="text/javascript" src="js/lib/jquery-2.0.0.min.js"></script>
+  <script type="text/javascript" src="js/PuzzlePiece.js"></script>
+  <script type="text/javascript" src="js/SliderPuzzle.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
